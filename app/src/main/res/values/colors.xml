@@ -2,11 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
     <color name="primary">#9B5A5A</color>
     <color name="gray">#748485</color>
     <color name="bg">#99413F</color>
-    <color name="white_60">#99FFFFFF</color>
+    <color name="white_light">#99FFFFFF</color>
     <color name="gray_medium">#666666</color>
     <color name="gradient_start">#D2696E</color>
     <color name="gradient_end">#B85A5F</color>
+    <color name="button_bg">#AE7675</color>
 </resources>
