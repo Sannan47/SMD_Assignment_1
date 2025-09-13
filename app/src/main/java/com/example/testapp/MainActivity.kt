@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         val logo = findViewById<ImageView>(R.id.logo)
 
         logo.setOnClickListener() {
-            val intent = Intent(this, SignupActivity::class.java)
+            val intent = Intent(this, StartActivity::class.java)
             startActivity(intent)
             finish()
         }

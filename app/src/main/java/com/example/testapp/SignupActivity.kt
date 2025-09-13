@@ -19,7 +19,7 @@ class SignupActivity : AppCompatActivity() {
         val profileImage = findViewById<RelativeLayout>(R.id.profileImage)
 
         backBtn.setOnClickListener() {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, StartActivity::class.java)
             startActivity(intent)
             finish()
         }
