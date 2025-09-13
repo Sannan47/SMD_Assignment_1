@@ -9,7 +9,7 @@
     <color name="white_light">#99FFFFFF</color>
     <color name="gray_light">#D9D9D9</color>
     <color name="gray_medium">#666666</color>
-    <color name="gradient_start">#D2696E</color>
-    <color name="gradient_end">#B85A5F</color>
     <color name="button_bg">#AE7675</color>
+    <color name="white_input">#F8F8F8</color>
+
 </resources>
