@@ -14,11 +14,18 @@ class HomeActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_home)
 
+        val messagesBtn = findViewById<ImageView>(R.id.messages)
         val cameraBtn = findViewById<ImageView>(R.id.cameraBtn)
         val searchBtn = findViewById<ImageView>(R.id.searchBtn)
         val addBtn = findViewById<ImageView>(R.id.addBtn)
         val heartBtn = findViewById<ImageView>(R.id.heartBtn)
         val profileBtn = findViewById<ImageView>(R.id.profileBtn)
+
+        messagesBtn.setOnClickListener() {
+            val intent = Intent(this, MessageListActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         cameraBtn.setOnClickListener() {
             val intent = Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE)

@@ -25,6 +25,7 @@
             android:drawableStart="@drawable/search_small"
             android:drawableEnd="@drawable/cross"
             android:padding="8dp"
+            android:drawablePadding="8dp"
             android:background="@drawable/input_transparent"/>
 
         <TextView
