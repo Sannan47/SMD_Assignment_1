@@ -50,11 +50,11 @@ class HomeActivity : AppCompatActivity() {
 //            finish()
 //        }
 
-//        profileBtn.setOnClickListener() {
-//            val intent = Intent(this, ProfileActivity::class.java)
-//            startActivity(intent)
-//            finish()
-//        }
+        profileBtn.setOnClickListener() {
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
     }
 }
