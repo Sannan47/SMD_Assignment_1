@@ -6,43 +6,33 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 
-class HomeActivity : AppCompatActivity() {
+class OtherProfileViewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_other_profile_view)
 
-        val messagesBtn = findViewById<ImageView>(R.id.messages)
-        val cameraBtn = findViewById<ImageView>(R.id.cameraBtn)
+
+        val backBtn = findViewById<ImageView>(R.id.backBtn)
+        val homeBtn = findViewById<ImageView>(R.id.homeBtn)
         val searchBtn = findViewById<ImageView>(R.id.searchBtn)
         val addBtn = findViewById<ImageView>(R.id.addBtn)
         val heartBtn = findViewById<ImageView>(R.id.heartBtn)
         val profileBtn = findViewById<ImageView>(R.id.profileBtn)
-        val story = findViewById<LinearLayout>(R.id.story)
-        val pfp = findViewById<ImageView>(R.id.postProfilePic)
 
-        pfp.setOnClickListener() {
-            val intent = Intent(this, OtherProfileViewActivity::class.java)
+        backBtn.setOnClickListener() {
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
             finish()
         }
 
-        story.setOnClickListener() {
-            val intent = Intent(this, StoryViewActivity::class.java)
+        homeBtn.setOnClickListener() {
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
             finish()
-        }
-
-        messagesBtn.setOnClickListener() {
-            val intent = Intent(this, MessageListActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-
-        cameraBtn.setOnClickListener() {
-            val intent = Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE)
-            startActivity(intent)
         }
 
         searchBtn.setOnClickListener() {
@@ -68,6 +58,5 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-
     }
 }
