@@ -17,6 +17,7 @@ class MessageListActivity : AppCompatActivity() {
 
         val cameraBtn = findViewById<LinearLayout>(R.id.cameraBtn)
         val backBtn = findViewById<ImageView>(R.id.backBtn)
+        val joshua = findViewById<LinearLayout>(R.id.joshua)
 
         backBtn.setOnClickListener() {
             val intent = Intent(this, HomeActivity::class.java)
@@ -26,6 +27,11 @@ class MessageListActivity : AppCompatActivity() {
 
         cameraBtn.setOnClickListener() {
             val intent = Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE)
+            startActivity(intent)
+        }
+
+        joshua.setOnClickListener() {
+            val intent = Intent(this, DirectMessageActivity::class.java)
             startActivity(intent)
         }
 
