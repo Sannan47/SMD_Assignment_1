@@ -32,10 +32,10 @@ class LoginActivity : AppCompatActivity() {
             finish()
         }
 
-//        loginBtn.setOnClickListener() {
-//            val intent = Intent(this, HomeActivity::class.java)
-//            startActivity(intent)
-//            finish()
-//        }
+        loginBtn.setOnClickListener() {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }

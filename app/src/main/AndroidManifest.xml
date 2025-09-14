@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestApp">
         <activity
+            android:name=".SearchTabActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
