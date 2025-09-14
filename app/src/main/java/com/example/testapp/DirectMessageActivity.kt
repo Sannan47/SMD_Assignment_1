@@ -16,11 +16,18 @@ class DirectMessageActivity : AppCompatActivity() {
         setContentView(R.layout.activity_direct_message)
 
         val backBtn = findViewById<ImageView>(R.id.backBtn)
+        val callBtn = findViewById<ImageView>(R.id.callBtn)
+
 
         backBtn.setOnClickListener() {
             val intent = Intent(this, MessageListActivity::class.java)
             startActivity(intent)
             finish()
+        }
+
+        callBtn.setOnClickListener() {
+            val intent = Intent(this, CallActivity::class.java)
+            startActivity(intent)
         }
     }
 }
