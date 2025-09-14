@@ -3,6 +3,7 @@ package com.example.testapp
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -18,6 +19,13 @@ class ProfileActivity : AppCompatActivity() {
         val homeBtn = findViewById<ImageView>(R.id.homeBtn)
         val searchBtn = findViewById<ImageView>(R.id.searchBtn)
         val editProfileBtn = findViewById<TextView>(R.id.editProfileBtn)
+        val hightlightBtn = findViewById<LinearLayout>(R.id.highlight)
+
+        hightlightBtn.setOnClickListener() {
+            val intent = Intent(this, HighlightViewActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         editProfileBtn.setOnClickListener() {
             val intent = Intent(this, ProfileEditActivity::class.java)
