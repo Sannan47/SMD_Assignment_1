@@ -159,8 +159,6 @@
             android:orientation="horizontal"
             android:alignmentMode="alignMargins">
 
-            <!-- Just leave blank placeholders, you can set your own images later -->
-
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="130dp"
@@ -277,9 +275,6 @@
                 android:scaleType="centerCrop"
                 android:layout_marginEnd="2dp"
                 android:layout_marginBottom="2dp"/>
-
-
-            <!-- Duplicate these ImageViews as many times as needed -->
 
         </GridLayout>
     </ScrollView>
