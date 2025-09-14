@@ -21,11 +21,10 @@ class SearchTabActivity : AppCompatActivity() {
         val heartBtn = findViewById<ImageView>(R.id.heartBtn)
         val profileBtn = findViewById<ImageView>(R.id.profileBtn)
 
-//        searchBox.setOnClickListener() {
-//            val intent = Intent(this, SearchActivity::class.java)
-//            startActivity(intent)
-//            finish()
-//        }
+        searchBox.setOnClickListener() {
+            val intent = Intent(this, SearchActivity::class.java)
+            startActivity(intent)
+        }
 
         homeBtn.setOnClickListener() {
             val intent = Intent(this, HomeActivity::class.java)
