@@ -6,8 +6,6 @@ import android.widget.ImageView
 import android.widget.RelativeLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class SearchTabActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,7 +43,7 @@ class SearchTabActivity : AppCompatActivity() {
 //        }
 
         profileBtn.setOnClickListener() {
-            val intent = Intent(this, ProfileActivity::class.java)
+            val intent = Intent(this, ProfileEditActivity::class.java)
             startActivity(intent)
             finish()
         }

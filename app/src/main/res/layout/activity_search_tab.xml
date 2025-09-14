@@ -338,8 +338,7 @@
             android:layout_height="24dp"
             android:src="@drawable/profile_image"
             android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            app:tint="@color/primary"/>
+            android:layout_centerVertical="true"/>
 
     </LinearLayout>
 
