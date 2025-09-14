@@ -30,11 +30,11 @@ class SearchTabActivity : AppCompatActivity() {
             finish()
         }
 
-//        addBtn.setOnClickListener() {
-//            val intent = Intent(this, AddPostActivity::class.java)
-//            startActivity(intent)
-//            finish()
-//        }
+        addBtn.setOnClickListener() {
+            val intent = Intent(this, CreatePostActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
 //        heartBtn.setOnClickListener() {
 //            val intent = Intent(this, LikedActivity::class.java)

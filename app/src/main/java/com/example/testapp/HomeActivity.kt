@@ -20,6 +20,13 @@ class HomeActivity : AppCompatActivity() {
         val heartBtn = findViewById<ImageView>(R.id.heartBtn)
         val profileBtn = findViewById<ImageView>(R.id.profileBtn)
         val story = findViewById<LinearLayout>(R.id.story)
+        val pfp = findViewById<ImageView>(R.id.postProfilePic)
+
+//        pfp.setOnClickListener() {
+//            val intent = Intent(this, OthersProfileActivity::class.java)
+//            startActivity(intent)
+//            finish()
+//        }
 
         story.setOnClickListener() {
             val intent = Intent(this, StoryViewActivity::class.java)
@@ -44,11 +51,11 @@ class HomeActivity : AppCompatActivity() {
             finish()
         }
 
-//        addBtn.setOnClickListener() {
-//            val intent = Intent(this, AddPostActivity::class.java)
-//            startActivity(intent)
-//            finish()
-//        }
+        addBtn.setOnClickListener() {
+            val intent = Intent(this, CreatePostActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
 //        heartBtn.setOnClickListener() {
 //            val intent = Intent(this, LikedActivity::class.java)
